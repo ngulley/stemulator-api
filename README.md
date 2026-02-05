@@ -1,5 +1,5 @@
 # STEMulator
-STEM education API for running interactive and AI guided simulations of science labs that align with Next Generation Science Standards (NGSS).
+REST API for running interactive and AI guided simulations of STEM education science labs. The teaching approach and learning goals of science labs are closely aligned with Next Generation Science Standards (NGSS).
 
 ## Quickstart Steps
 
