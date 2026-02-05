@@ -1,11 +1,11 @@
-# stemulator-api
+# STEMulator
 STEM education API for running interactive and AI guided simulations of science labs that align with Next Generation Science Standards (NGSS).
 
 ## Quickstart Steps
 
 <b>1. Clone Repo</b>
 
-git clone https://github.com/ngulley/stemulator-api.git
+- git clone https://github.com/ngulley/stemulator-api.git
 
 
 <b>2. Mongo DB Integration</b>
