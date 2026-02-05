@@ -1,0 +1,226 @@
+[{
+  "_id": "HS-ESS1-2",
+  "discipline": "Earth and Space Science",
+  "topic": "Earth’s Place in the Universe",
+  "subTopic": "Earth and the Solar System",
+  "description": "Virtual science lab exploring Earth's place in the universe through simulation of solar system dynamics.",
+  "learningGoals": {
+    "bigIdea": "Understanding the complex interactions within our solar system and the effects of mass and distance on orbital mechanics.",
+    "objectives": [
+      "Analyze the effects of mass on orbital speed.",
+      "Investigate the relationship between gravity and orbital paths.",
+      "Explore interactions between multiple celestial bodies.",
+      "Simulate and predict changes in the solar system dynamics."
+    ],
+    "successCriteria": [
+      "Accurately record data for speed and distance.",
+      "Make logical predictions based on simulations.",
+      "Demonstrate understanding of gravity's role in orbits.",
+      "Effectively communicate observations and conclusions."
+    ]
+  },
+  "labParts": [
+    {
+      "partId": 1,
+      "title": "Exploring Orbital Mechanics",
+      "setup": [
+        "Open the My Solar System Lab Simulation app.",
+        "Set the mass of the sun to 250.0 x 10^28 kg.",
+        "Add one planet with a mass of 25.0 x 10^28 kg."
+      ],
+      "observations": [
+        "What happens to the orbit of the planet when the mass is changed?",
+        "How does the distance from the sun affect the orbital speed of the planet?",
+        "What patterns can be seen in the planet's orbit over time?"
+      ],
+      "recordings": [
+        "Record the orbital speed of the planet in km/s.",
+        "Measure the distance of the planet from the sun in meters.",
+        "Document the time it takes for one complete orbit in years."
+      ],
+      "predictions": [
+        "What will happen to the orbit if the mass of the planet is doubled?",
+        "How will the planet's speed change if it is moved further from the sun?"
+      ]
+    },
+    {
+      "partId": 2,
+      "title": "Gravity and Orbital Relationships",
+      "setup": [
+        "Reset the simulation.",
+        "Set the mass of the sun back to 250.0 x 10^28 kg.",
+        "Adjust the gravity force to observe its effect on the planet."
+      ],
+      "observations": [
+        "How does changing the gravity force affect the planet's orbit?",
+        "What is the relationship between gravity and orbital speed?",
+        "Can you observe any changes in the path taken by the planet?"
+      ],
+      "recordings": [
+        "Record the gravity force acting on the planet in Newtons.",
+        "Measure the velocity of the planet during its orbit.",
+        "Document the period of orbit before and after adjustments."
+      ],
+      "predictions": [
+        "What will happen to the orbit if gravity is increased significantly?",
+        "How will the planet's path change if the gravity is decreased?"
+      ]
+    },
+    {
+      "partId": 3,
+      "title": "Multiple Bodies in the Solar System",
+      "setup": [
+        "Add another planet with a mass of 25.0 x 10^28 kg.",
+        "Adjust the distance of the second planet from the sun.",
+        "Run the simulation to observe both planets."
+      ],
+      "observations": [
+        "How do the two planets interact gravitationally?",
+        "What patterns emerge in their orbital paths?",
+        "Are there any noticeable effects on their speeds as they orbit?"
+      ],
+      "recordings": [
+        "Record the distance between the two planets during their orbits.",
+        "Measure the speed of both planets in km/s.",
+        "Document any changes in their orbital periods."
+      ],
+      "predictions": [
+        "How will the orbit of one planet change if the other planet's mass is increased?",
+        "What will happen to their orbits if they are brought closer together?"
+      ]
+    },
+    {
+      "partId": 4,
+      "title": "Simulating Solar System Dynamics",
+      "setup": [
+        "Clear all previous settings in the simulation.",
+        "Set the simulation to normal speed.",
+        "Choose the option to display the center of mass."
+      ],
+      "observations": [
+        "What is the effect of the center of mass on the orbits of the planets?",
+        "How does the system behave when the sun's mass is altered?",
+        "What trends can you observe in the simulation over a long time frame?"
+      ],
+      "recordings": [
+        "Record the center of mass position in relation to the sun.",
+        "Measure the overall gravitational force in the system.",
+        "Document the total simulation time and any significant events."
+      ],
+      "predictions": [
+        "What will happen to the orbits if the sun's mass is greatly reduced?",
+        "How will the dynamics of the system change with additional bodies?"
+      ]
+    }
+  ],
+  "_class": "edu.regis.stemulator.model.STEMLab"
+},
+{
+  "_id": "HS-LS4-2",
+  "discipline": "Life Science",
+  "topic": "Biological Evolution: Unity and Diversity",
+  "subTopic": "Natural Selection",
+  "description": "This virtual lab explores the principles of natural selection using a simulation app to model how different traits affect survival and reproduction in a rabbit population.",
+  "learningGoals": {
+    "bigIdea": "Natural selection is a key mechanism of evolution that affects the diversity of life.",
+    "objectives": [
+      "Understand the role of environmental factors in natural selection.",
+      "Analyze how specific traits impact the survival of a population.",
+      "Evaluate the effects of mutations on population dynamics.",
+      "Synthesize data to draw conclusions about evolutionary changes."
+    ],
+    "successCriteria": [
+      "Demonstrate the ability to collect and analyze data from the simulation.",
+      "Effectively predict outcomes based on specific trait changes.",
+      "Articulate connections between environmental factors and trait survival.",
+      "Create a comprehensive report summarizing findings and conclusions."
+    ]
+  },
+  "labParts": [
+    {
+      "partId": 1,
+      "title": "Introduction to Natural Selection",
+      "setup": [
+        "Open the Natural Selection Lab Simulation app.",
+        "Select the initial population of rabbits with varying traits."
+      ],
+      "observations": [
+        "How do the different traits of the rabbits affect their visibility in the environment?",
+        "What do you notice about the initial population's distribution of traits?",
+        "How do environmental factors (e.g., food availability) seem to influence the rabbits?"
+      ],
+      "evidence": [
+        "Record the initial population counts of each trait (fur color, ear type, tooth size).",
+        "Capture a screenshot of the initial trait distribution graph."
+      ],
+      "predictions": [
+        "Which traits do you think will be favored in the next generation?",
+        "How might changes in the environment affect future generations of rabbits?"
+      ]
+    },
+    {
+      "partId": 2,
+      "title": "Simulating Environmental Changes",
+      "setup": [
+        "Introduce a new environmental factor, such as predators.",
+        "Run the simulation for 10 generations."
+      ],
+      "observations": [
+        "What changes do you observe in the rabbit population over generations?",
+        "How do specific traits appear to influence survival rates?",
+        "Is there a noticeable shift in the dominant traits among the rabbits?"
+      ],
+      "evidence": [
+        "Document the population counts of each trait at each generation.",
+        "Analyze and record the survival rates of each trait."
+      ],
+      "predictions": [
+        "Which traits do you think will decrease in frequency?",
+        "How do you expect the population to stabilize in response to the new predator?"
+      ]
+    },
+    {
+      "partId": 3,
+      "title": "Exploring Mutations and Variation",
+      "setup": [
+        "Add a mutation to the rabbit population (e.g., longer teeth).",
+        "Run the simulation for 10 more generations."
+      ],
+      "observations": [
+        "How does the introduction of mutations affect the population?",
+        "What variations in traits do you notice emerging?",
+        "Do any new traits become more advantageous?"
+      ],
+      "evidence": [
+        "Track the occurrences of the new trait and its impact on survival.",
+        "Create a graph showing the changes in trait frequency over generations."
+      ],
+      "predictions": [
+        "Will the new mutation become prevalent in future generations?",
+        "How might these mutations interact with environmental changes?"
+      ]
+    },
+    {
+      "partId": 4,
+      "title": "Analyzing the Data and Formulating Conclusions",
+      "setup": [
+        "Review the data collected from all generations.",
+        "Analyze how natural selection has shaped the rabbit population."
+      ],
+      "observations": [
+        "What trends do you notice in the data about trait survival?",
+        "How do the results support or contradict your initial predictions?",
+        "What role did environmental factors play in shaping the population?"
+      ],
+      "evidence": [
+        "Summarize the data trends in a final report.",
+        "Create a visual representation (chart) of trait frequency changes."
+      ],
+      "predictions": [
+        "What future changes might occur if environmental conditions shift again?",
+        "How could different mutations further influence the population?"
+      ]
+    }
+  ],
+  "_class": "edu.regis.stemulator.model.ScienceLab"
+}]
