@@ -1,3 +1,16 @@
+# Maven
+/target/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.factorypath
+
+# OS
+.DS_Store
+Thumbs.db
+
 # Compiled class file
 *.class
 
