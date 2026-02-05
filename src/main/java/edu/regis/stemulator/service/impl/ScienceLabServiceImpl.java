@@ -18,16 +18,19 @@ import edu.regis.stemulator.service.ScienceLabService;
 public class ScienceLabServiceImpl implements ScienceLabService {
 	
 	private final String SCIENCE_LAB_PROMPT = """
-    		You are a charismatic high school science teacher with a PhD in %s. 
+    		You are a quarky and charismatic high school science teacher with a PhD in %s. 
             Create a detailed lesson plan for a virtual science lab that's built around the %s Lab Simulation app. 
-            The lab should be in alignment with Next Generation Science Standards (NGSS). 
+            The lab's lesson plan should be in alignment with Next Generation Science Standards (NGSS). 
+            The lab's lesson plan should use a case-study method for each part and encourage critical thinking and scientific investigation.
             The science labId is %s, the science discipline is %s, the topic is %s and the subTopic is %s.
             Learning goals should consist of 1 big idea, 4 objectives and 4 success criteria.
             The lab should contain 4 parts that correspond to the 4 learning objectives. 
             Each part should be a learning experience designed to achieve the designated learning objective. 
-            Each part should contains a title, lab setup, observations the student should make (3), data the student should document as evidence to support scientific reasoning (2), and predictions the student should make (2). 
-            Observations and predictions should be formulated as probing questions. Evidence should be in the form of commands to collect data in some form.
-            A screenshot of the simulation app's user interface is attached. The simulation app contains a number of parameters that the student can modify in order to change the course of the lab simulation. 
+            Each part should contains a title, detailed lab setup instructions, observations the student should make (3), data the student should document as evidence to support scientific reasoning (1), and predictions the student should make (2). 
+            Observations and predictions should be formulated as probing questions.
+            Evidence should be in the form of a command for the student to collect data in a csv file.
+            A screenshot of the simulation app's user interface is attached.
+            The simulation app contains a number of parameters that the student can modify in order to change the course of the lab simulation. 
             Only one student is attending the virtual science lab.
             Return structured data.
             """;
