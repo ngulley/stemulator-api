@@ -22,10 +22,3 @@ public class ScienceLab {
 	private List<LabPart> labParts;
 	
 }
-
-@Data
-class LearningGoals {
-	private String bigIdea;
-	private List objectives;
-	private List successCriteria;	
-}
