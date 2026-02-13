@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "_id",
+    "_class",
+    "description",
+    "discipline",
+    "labParts",
+    "learningGoals",
+    "subTopic",
+    "topic"
+  ],
+  "properties": {
+    "_id": {
+      "type": "string"
+    },
+    "_class": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "discipline": {
+      "type": "string"
+    },
+    "labParts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "evidence",
+          "observations",
+          "partId",
+          "predictions",
+          "setup",
+          "title"
+        ],
+        "properties": {
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "observations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "partId": {
+            "type": "integer"
+          },
+          "predictions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "setup": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "learningGoals": {
+      "type": "object",
+      "required": [
+        "bigIdea",
+        "objectives",
+        "successCriteria"
+      ],
+      "properties": {
+        "bigIdea": {
+          "type": "string"
+        },
+        "objectives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "successCriteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "subTopic": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    }
+  },
+  "$defs": {}
+}

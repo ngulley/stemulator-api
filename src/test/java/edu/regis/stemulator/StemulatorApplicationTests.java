@@ -8,6 +8,7 @@ class StemulatorApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.print("Hello world test!");
 	}
 
 }
