@@ -116,20 +116,20 @@
   "discipline": "Life Science",
   "topic": "Biological Evolution: Unity and Diversity",
   "subTopic": "Natural Selection",
-  "description": "This virtual lab explores the principles of natural selection using a simulation app to model how different traits affect survival and reproduction in a rabbit population.",
+  "description": "This virtual science lab explores the principles of natural selection using a simulation app, allowing students to manipulate variables and observe outcomes in a controlled environment.",
   "learningGoals": {
-    "bigIdea": "Natural selection is a key mechanism of evolution that affects the diversity of life.",
+    "bigIdea": "Natural selection drives the evolution of species by favoring beneficial traits.",
     "objectives": [
-      "Understand the role of environmental factors in natural selection.",
-      "Analyze how specific traits impact the survival of a population.",
-      "Evaluate the effects of mutations on population dynamics.",
-      "Synthesize data to draw conclusions about evolutionary changes."
+      "Understand the concept of natural selection.",
+      "Examine the impact of environmental changes on species survival.",
+      "Analyze the role of genetic mutations in evolution.",
+      "Evaluate data to draw conclusions about evolutionary processes."
     ],
     "successCriteria": [
-      "Demonstrate the ability to collect and analyze data from the simulation.",
-      "Effectively predict outcomes based on specific trait changes.",
-      "Articulate connections between environmental factors and trait survival.",
-      "Create a comprehensive report summarizing findings and conclusions."
+      "Accurately manipulate simulation variables and document outcomes.",
+      "Make predictions based on observations and justify them.",
+      "Collect and analyze data effectively to support claims.",
+      "Demonstrate understanding of natural selection through thoughtful reflections."
     ]
   },
   "labParts": [
@@ -137,302 +137,82 @@
       "partId": 1,
       "title": "Introduction to Natural Selection",
       "setup": [
-        "Open the Natural Selection Lab Simulation app.",
-        "Select the initial population of rabbits with varying traits."
+        "Launch the Natural Selection Lab Simulation app.",
+        "Select the 'Rabbits vs. Wolves' scenario.",
+        "Set initial parameters: Habitat to 'Savanna', Wolves to 'Few', and Food Supply to 'Normal'."
       ],
       "observations": [
-        "How do the different traits of the rabbits affect their visibility in the environment?",
-        "What do you notice about the initial population's distribution of traits?",
-        "How do environmental factors (e.g., food availability) seem to influence the rabbits?"
+        "What variations in rabbit color can you see in the initial population?",
+        "How do rabbits react to the presence of wolves?",
+        "What environmental factors might impact the rabbit population?"
       ],
       "evidence": [
-        "Record the initial population counts of each trait (fur color, ear type, tooth size).",
-        "Capture a screenshot of the initial trait distribution graph."
+        "Collect data on rabbit population and traits in a CSV file after each generation."
       ],
       "predictions": [
-        "Which traits do you think will be favored in the next generation?",
-        "How might changes in the environment affect future generations of rabbits?"
+        "How do you think the rabbit population will change over the next few generations?",
+        "What traits will be favored as natural selection occurs?"
       ]
     },
     {
       "partId": 2,
       "title": "Simulating Environmental Changes",
       "setup": [
-        "Introduce a new environmental factor, such as predators.",
-        "Run the simulation for 10 generations."
+        "Continue in the simulation and change the Habitat to 'Forest'.",
+        "Increase the number of Wolves to 'Some'.",
+        "Set Food Supply to 'Scarce'."
       ],
       "observations": [
-        "What changes do you observe in the rabbit population over generations?",
-        "How do specific traits appear to influence survival rates?",
-        "Is there a noticeable shift in the dominant traits among the rabbits?"
+        "How does the change in habitat affect rabbit survival?",
+        "What changes do you notice in the wolf population?",
+        "How do the rabbits' traits change in response to these new conditions?"
       ],
       "evidence": [
-        "Document the population counts of each trait at each generation.",
-        "Analyze and record the survival rates of each trait."
+        "Document the changes in rabbit and wolf populations in a CSV file after each generation."
       ],
       "predictions": [
-        "Which traits do you think will decrease in frequency?",
-        "How do you expect the population to stabilize in response to the new predator?"
+        "What will happen to the rabbit population with increased predation?",
+        "Which rabbit traits will likely become more common in this environment?"
       ]
     },
     {
       "partId": 3,
       "title": "Exploring Mutations and Variation",
       "setup": [
-        "Add a mutation to the rabbit population (e.g., longer teeth).",
-        "Run the simulation for 10 more generations."
+        "In the simulation, set the Mutation Rate to 'High variation'.",
+        "Keep the previous parameters: Habitat as 'Forest', Wolves as 'Some', Food Supply as 'Scarce'."
       ],
       "observations": [
-        "How does the introduction of mutations affect the population?",
-        "What variations in traits do you notice emerging?",
-        "Do any new traits become more advantageous?"
+        "What new traits appear in the rabbit population due to mutations?",
+        "How do these mutations impact rabbit survival against wolves?",
+        "Are there any traits that seem to be disadvantageous?"
       ],
       "evidence": [
-        "Track the occurrences of the new trait and its impact on survival.",
-        "Create a graph showing the changes in trait frequency over generations."
+        "Record the variations in traits and their survival rates in a CSV file after running the simulation."
       ],
       "predictions": [
-        "Will the new mutation become prevalent in future generations?",
-        "How might these mutations interact with environmental changes?"
+        "How might increased mutations affect the overall rabbit population?",
+        "Which traits are likely to persist or vanish in future generations?"
       ]
     },
     {
       "partId": 4,
-      "title": "Analyzing the Data and Formulating Conclusions",
+      "title": "Analyzing Data and Formulating Conclusions",
       "setup": [
-        "Review the data collected from all generations.",
-        "Analyze how natural selection has shaped the rabbit population."
+        "Review the data collected from previous parts.",
+        "Compare the rabbit populations and traits across different generations."
       ],
       "observations": [
-        "What trends do you notice in the data about trait survival?",
-        "How do the results support or contradict your initial predictions?",
-        "What role did environmental factors play in shaping the population?"
+        "What trends do you notice in the rabbit population over generations?",
+        "How did the presence of predators influence trait selection?",
+        "What can you conclude about the relationship between environment and evolution?"
       ],
       "evidence": [
-        "Summarize the data trends in a final report.",
-        "Create a visual representation (chart) of trait frequency changes."
+        "Summarize your findings in a CSV file, including population changes and trait success."
       ],
       "predictions": [
-        "What future changes might occur if environmental conditions shift again?",
-        "How could different mutations further influence the population?"
-      ]
-    }
-  ],
-  "_class": "edu.regis.stemulator.model.ScienceLab"
-},
-{
-  "_id": "HS-LS4-2A",
-  "discipline": "Life Science",
-  "topic": "Biological Evolution: Unity and Diversity",
-  "subTopic": "Natural Selection",
-  "description": "Virtual science lab exploring natural selection through a simulation of rabbit populations, focusing on adaptations and environmental factors.",
-  "learningGoals": {
-    "bigIdea": "Natural selection is a key mechanism of evolution, shaping the diversity of life.",
-    "objectives": [
-      "Understand the concept of natural selection.",
-      "Analyze how environmental factors influence survival and reproduction.",
-      "Investigate the impact of genetic mutations on populations.",
-      "Evaluate data to draw conclusions about evolutionary processes."
-    ],
-    "successCriteria": [
-      "Demonstrate understanding of natural selection through simulation.",
-      "Correctly analyze changes in population traits over generations.",
-      "Effectively document and interpret data from the simulation.",
-      "Articulate conclusions based on evidence gathered during the lab."
-    ]
-  },
-  "labParts": [
-    {
-      "partId": 1,
-      "title": "Introduction to Natural Selection",
-      "setup": [
-        "Open the Natural Selection Lab Simulation app.",
-        "Select the initial rabbit population and environmental factors."
-      ],
-      "observations": [
-        "What variations exist in the initial rabbit population?",
-        "How do the environmental factors affect the rabbits' survival?",
-        "What adaptations can you identify in the rabbits?"
-      ],
-      "evidence": [
-        "Document the initial population characteristics in a table.",
-        "Record the environmental factors you selected."
-      ],
-      "predictions": [
-        "How do you expect the population to change over generations?",
-        "Which traits do you think will be favored by natural selection?"
-      ]
-    },
-    {
-      "partId": 2,
-      "title": "Simulating Changes in Population",
-      "setup": [
-        "Run the simulation for 10 generations without adding mutations.",
-        "Observe the changes in population size and traits."
-      ],
-      "observations": [
-        "What changes occur in the population size over generations?",
-        "Which traits become more or less common?",
-        "How do the environmental factors interact with the traits?"
-      ],
-      "evidence": [
-        "Create a graph showing population size over generations.",
-        "List the most common and rare traits after 10 generations."
-      ],
-      "predictions": [
-        "What do you think will happen if the simulation continues for another 10 generations?",
-        "Will the population stabilize or continue to change?"
-      ]
-    },
-    {
-      "partId": 3,
-      "title": "Adding Mutations",
-      "setup": [
-        "Introduce a mutation to the rabbit population.",
-        "Run the simulation for another 10 generations."
-      ],
-      "observations": [
-        "What immediate effects do the mutations have on the population?",
-        "How do the new traits interact with existing traits?",
-        "What role do environmental factors play in the success of these mutations?"
-      ],
-      "evidence": [
-        "Record the traits and frequencies of the population after introducing mutations.",
-        "Document any changes in survival rates of rabbits with new traits."
-      ],
-      "predictions": [
-        "How do you think the introduced mutations will affect future generations?",
-        "Will some traits become dominant over others due to the mutations?"
-      ]
-    },
-    {
-      "partId": 4,
-      "title": "Analyzing Results and Drawing Conclusions",
-      "setup": [
-        "Analyze the data collected throughout the simulation.",
-        "Summarize how natural selection influenced the rabbit population."
-      ],
-      "observations": [
-        "What patterns do you observe in the data collected?",
-        "How did the introduction of mutations impact the overall evolution of the population?",
-        "What conclusions can you draw about natural selection from your simulation?"
-      ],
-      "evidence": [
-        "Create a summary chart of traits and their survival rates.",
-        "Write a brief conclusion about the impact of environmental factors on natural selection."
-      ],
-      "predictions": [
-        "What future changes in the population can you foresee based on your data?",
-        "How might this simulation reflect real-world natural selection processes?"
-      ]
-    }
-  ],
-  "_class": "edu.regis.stemulator.model.ScienceLab"
-},
-{
-  "_id": "HS-LS4-2B",
-  "discipline": "Life Science",
-  "topic": "Biological Evolution: Unity and Diversity",
-  "subTopic": "Natural Selection",
-  "description": "This virtual science lab utilizes the Natural Selection Lab Simulation app to explore the concept of natural selection through a case-study approach.",
-  "learningGoals": {
-    "bigIdea": "Natural selection drives the evolution of species over time.",
-    "objectives": [
-      "Identify how environmental factors influence population traits.",
-      "Analyze the impact of genetic variations on survival.",
-      "Evaluate the role of competition in natural selection.",
-      "Understand how mutations contribute to diversity in populations."
-    ],
-    "successCriteria": [
-      "Students will correctly document changes in population traits over multiple generations.",
-      "Students will articulate how environmental factors influence survival.",
-      "Students will demonstrate the ability to collect and analyze data effectively.",
-      "Students will make informed predictions about future generations based on observed data."
-    ]
-  },
-  "labParts": [
-    {
-      "partId": 1,
-      "title": "Environmental Influences on Traits",
-      "setup": [
-        "Open the Natural Selection Lab Simulation app.",
-        "Select environmental factors such as 'Wolves' and 'Tough Food'.",
-        "Run the simulation for 20 generations."
-      ],
-      "observations": [
-        "What changes do you notice in the population traits as generations progress?",
-        "How do the introduced environmental factors affect the population?",
-        "Are there specific traits that seem to be favored over others?"
-      ],
-      "evidence": [
-        "Collect data on population traits over 20 generations and document it in a CSV file."
-      ],
-      "predictions": [
-        "How might the population change if the environmental conditions were altered?",
-        "What traits do you predict will dominate in the next generation?"
-      ]
-    },
-    {
-      "partId": 2,
-      "title": "Genetic Variation and Survival",
-      "setup": [
-        "Start a new simulation with different genetic variations.",
-        "Introduce mutations for fur color and ear shape.",
-        "Observe the population for 20 generations."
-      ],
-      "observations": [
-        "Which genetic variations are most successful in the current environment?",
-        "How do these variations affect the overall survival of the population?",
-        "Are there any traits that become less common over time?"
-      ],
-      "evidence": [
-        "Document the success rates of various traits in a CSV file."
-      ],
-      "predictions": [
-        "What might happen to the population if a new predator is introduced?",
-        "How would the population look if there were no mutations?"
-      ]
-    },
-    {
-      "partId": 3,
-      "title": "Competition and Natural Selection",
-      "setup": [
-        "Adjust the population density settings in the simulation.",
-        "Run the simulation for 20 generations with increased competition.",
-        "Observe the interactions among the population."
-      ],
-      "observations": [
-        "How does increased competition affect the survival of different traits?",
-        "Do you notice any specific traits that provide an advantage in competition?",
-        "What happens to the population size as competition increases?"
-      ],
-      "evidence": [
-        "Record the changes in population size and traits in a CSV file."
-      ],
-      "predictions": [
-        "What changes might you expect in the traits after several generations of high competition?",
-        "If competition decreases, how might the population traits evolve?"
-      ]
-    },
-    {
-      "partId": 4,
-      "title": "The Role of Mutations",
-      "setup": [
-        "Create a new simulation scenario by introducing various mutations.",
-        "Observe the effects of these mutations over 20 generations.",
-        "Note the traits that arise from these mutations."
-      ],
-      "observations": [
-        "What new traits emerge as a result of mutations?",
-        "How do these mutations affect the overall fitness of the population?",
-        "Are any mutations detrimental to the survival of the population?"
-      ],
-      "evidence": [
-        "Compile data on the prevalence of mutations and their impact in a CSV file."
-      ],
-      "predictions": [
-        "What might happen if all mutations were beneficial?",
-        "How would the population look like after several generations with only negative mutations?"
+        "What implications do your findings have for understanding real-world ecosystems?",
+        "How could this simulation inform conservation efforts?"
       ]
     }
   ],
