@@ -94,7 +94,7 @@ public class ScienceGuideServiceImpl implements ScienceGuideService {
 			String cvsFile = null;
 			try {
 				cvsFile = new String(evidence.getBytes(), StandardCharsets.UTF_8);
-			} catch (IOException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
             
