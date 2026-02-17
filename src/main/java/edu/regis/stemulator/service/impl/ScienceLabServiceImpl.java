@@ -30,7 +30,7 @@ public class ScienceLabServiceImpl implements ScienceLabService {
             Observations and predictions should be formulated as probing questions.
             Evidence should be in the form of a command for the student to collect data in a csv file.
             A screenshot of the simulation app's user interface is attached.
-            The simulation app contains a number of parameters that the student can modify in order to change the course of the lab simulation. 
+            The simulation app contains a number of lab controls that the student can modify in order to change the course of the lab simulation. 
             Only one student is attending the virtual science lab.
             Return structured data.
             """;
