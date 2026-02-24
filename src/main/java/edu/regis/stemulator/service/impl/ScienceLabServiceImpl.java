@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -96,6 +97,9 @@ public class ScienceLabServiceImpl implements ScienceLabService {
                 .prompt()
                 .user(u -> u.text(prompt)
                         .media(mimeType, imageResource))
+                .options(OpenAiChatOptions.builder()
+                        .temperature(0.0)
+                        .build())
                 .call()
                 .entity(ScienceLab.class);
         

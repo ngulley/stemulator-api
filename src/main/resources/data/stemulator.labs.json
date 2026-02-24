@@ -116,20 +116,20 @@
   "discipline": "Life Science",
   "topic": "Biological Evolution: Unity and Diversity",
   "subTopic": "Natural Selection",
-  "description": "This virtual science lab explores the principles of natural selection using a simulation app, allowing students to manipulate variables and observe outcomes in a controlled environment.",
+  "description": "This virtual science lab explores the principles of natural selection through a simulation that allows students to manipulate variables affecting a rabbit and wolf ecosystem.",
   "learningGoals": {
-    "bigIdea": "Natural selection drives the evolution of species by favoring beneficial traits.",
+    "bigIdea": "Natural selection is a key mechanism of evolution that leads to changes in populations over time.",
     "objectives": [
       "Understand the concept of natural selection.",
-      "Examine the impact of environmental changes on species survival.",
-      "Analyze the role of genetic mutations in evolution.",
+      "Analyze how environmental changes affect species survival.",
+      "Explore the role of mutations in evolution.",
       "Evaluate data to draw conclusions about evolutionary processes."
     ],
     "successCriteria": [
-      "Accurately manipulate simulation variables and document outcomes.",
-      "Make predictions based on observations and justify them.",
-      "Collect and analyze data effectively to support claims.",
-      "Demonstrate understanding of natural selection through thoughtful reflections."
+      "Students can explain the process of natural selection.",
+      "Students can identify how environmental factors influence species.",
+      "Students can describe the impact of mutations on populations.",
+      "Students can effectively analyze and present data from simulations."
     ]
   },
   "labParts": [
@@ -137,82 +137,84 @@
       "partId": 1,
       "title": "Introduction to Natural Selection",
       "setup": [
-        "Launch the Natural Selection Lab Simulation app.",
-        "Select the 'Rabbits vs. Wolves' scenario.",
-        "Set initial parameters: Habitat to 'Savanna', Wolves to 'Few', and Food Supply to 'Normal'."
+        "Open the Natural Selection Lab Simulation app.",
+        "Select the 'Introduction to Natural Selection' module.",
+        "Set the initial conditions: Habitat to 'Desert', Wolves to 'Few', Food Supply to 'Normal', and Mutation Rate to '10%'."
       ],
       "observations": [
-        "What variations in rabbit color can you see in the initial population?",
-        "How do rabbits react to the presence of wolves?",
-        "What environmental factors might impact the rabbit population?"
+        "What is the initial population of rabbits and wolves?",
+        "How do the rabbits and wolves interact in the ecosystem?",
+        "What traits do the rabbits exhibit in terms of speed and camouflage?"
       ],
       "evidence": [
-        "Collect data on rabbit population and traits in a CSV file after each generation."
+        "Document the population data of rabbits and wolves in a CSV file after each generation."
       ],
       "predictions": [
-        "How do you think the rabbit population will change over the next few generations?",
-        "What traits will be favored as natural selection occurs?"
+        "How will the population of rabbits change over several generations?",
+        "What traits will become more common in the rabbit population as the simulation progresses?"
       ]
     },
     {
       "partId": 2,
       "title": "Simulating Environmental Changes",
       "setup": [
-        "Continue in the simulation and change the Habitat to 'Forest'.",
-        "Increase the number of Wolves to 'Some'.",
-        "Set Food Supply to 'Scarce'."
+        "Change the Habitat to 'Forest'.",
+        "Keep the Wolves at 'Few', Food Supply at 'Normal', and Mutation Rate at '10%'.",
+        "Run the simulation for 10 generations."
       ],
       "observations": [
-        "How does the change in habitat affect rabbit survival?",
-        "What changes do you notice in the wolf population?",
-        "How do the rabbits' traits change in response to these new conditions?"
+        "How does the change in habitat affect the rabbit population?",
+        "What differences do you notice in the traits of rabbits compared to the desert habitat?",
+        "How do the wolves adapt to the new environment?"
       ],
       "evidence": [
-        "Document the changes in rabbit and wolf populations in a CSV file after each generation."
+        "Document the average traits of rabbits in a CSV file after 10 generations."
       ],
       "predictions": [
-        "What will happen to the rabbit population with increased predation?",
-        "Which rabbit traits will likely become more common in this environment?"
+        "What will happen to the rabbit population if the wolves remain few?",
+        "Will the traits of the rabbits change significantly in this new habitat?"
       ]
     },
     {
       "partId": 3,
       "title": "Exploring Mutations and Variation",
       "setup": [
-        "In the simulation, set the Mutation Rate to 'High variation'.",
-        "Keep the previous parameters: Habitat as 'Forest', Wolves as 'Some', Food Supply as 'Scarce'."
+        "Set the Mutation Rate to '30%'.",
+        "Keep the Habitat as 'Desert', Wolves as 'Few', and Food Supply as 'Normal'.",
+        "Run the simulation for 10 generations."
       ],
       "observations": [
-        "What new traits appear in the rabbit population due to mutations?",
-        "How do these mutations impact rabbit survival against wolves?",
-        "Are there any traits that seem to be disadvantageous?"
+        "What new traits appear in the rabbit population due to increased mutation?",
+        "How does the population size of rabbits change with higher mutation rates?",
+        "Are there any traits that seem to provide a survival advantage?"
       ],
       "evidence": [
-        "Record the variations in traits and their survival rates in a CSV file after running the simulation."
+        "Document the population changes and traits in a CSV file after 10 generations."
       ],
       "predictions": [
-        "How might increased mutations affect the overall rabbit population?",
-        "Which traits are likely to persist or vanish in future generations?"
+        "How will the increased mutation rate affect the overall fitness of the rabbit population?",
+        "Will the wolf population be affected by the changes in rabbit traits?"
       ]
     },
     {
       "partId": 4,
       "title": "Analyzing Data and Formulating Conclusions",
       "setup": [
-        "Review the data collected from previous parts.",
-        "Compare the rabbit populations and traits across different generations."
+        "Review the data collected from previous simulations.",
+        "Compare the population sizes and traits across different habitats and mutation rates.",
+        "Prepare to present your findings."
       ],
       "observations": [
-        "What trends do you notice in the rabbit population over generations?",
-        "How did the presence of predators influence trait selection?",
-        "What can you conclude about the relationship between environment and evolution?"
+        "What patterns do you notice in the data regarding population changes?",
+        "How do different environmental factors influence natural selection?",
+        "What conclusions can you draw about the relationship between traits and survival?"
       ],
       "evidence": [
-        "Summarize your findings in a CSV file, including population changes and trait success."
+        "Compile a summary of your findings and conclusions in a CSV file."
       ],
       "predictions": [
-        "What implications do your findings have for understanding real-world ecosystems?",
-        "How could this simulation inform conservation efforts?"
+        "What might happen if the environmental conditions change drastically?",
+        "How could these findings apply to real-world ecosystems?"
       ]
     }
   ],
