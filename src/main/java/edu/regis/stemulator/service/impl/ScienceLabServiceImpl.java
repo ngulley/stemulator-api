@@ -97,9 +97,10 @@ public class ScienceLabServiceImpl implements ScienceLabService {
                 .prompt()
                 .user(u -> u.text(prompt)
                         .media(mimeType, imageResource))
-                .options(OpenAiChatOptions.builder()
-                        .temperature(0.0)
-                        .build())
+// causes unit test failure due to null pointer exception                
+//                .options(OpenAiChatOptions.builder()
+//                        .temperature(0.0)
+//                        .build())
                 .call()
                 .entity(ScienceLab.class);
         
