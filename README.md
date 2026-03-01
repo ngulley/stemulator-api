@@ -55,8 +55,47 @@ REST API for running interactive and AI guided simulations of STEM education sci
 	--form 'evidence=@"/C:/Users/Nate/Documents/Grad School/MSSE692-Spring2026/week3/assignments/HS-LS4-2_part1_evidence1.csv"' \
 	--form 'scienceGuideRequest="{\"studentName\":\"Barack\",\"setup\":[\"no starting traits are selected\"],\"observations\":[\"the closer their fur color is to the color of the environment, the less visible they are to predators\",\"the initial population distribution oft traits is random\",\"the more limited the food, the smaller the population size. The more wolves the smaller the population size \"],\"predictions\":[\"brown fur, longer teeth and floppy ears\",\"if the environment turned white due to snow then white fur would be favored over brown fur.\"]}"'
 
+---
 
+## Project Structure
 
+```
+stemulator-api/
+├── README.md                                   # Project overview, environment setup, build and run info
+├── HELP.md                                     # Links to helpful resources
+├── mvnw.cmd                                    # Maven wrapper script for Windows platform
+├── mvnw                                        # Maven wrapper Bash script
+├── pom.xml                                     # Definitions for project's library dependencies
+├── .gitignore                                  # Git ignore rules
+│
+├── src/
+│   ├── main/
+│   │   ├── java                                # Java packages   
+│   │   │   ├── edu/regis/stemulator/config     
+│   │   │   ├── edu/regis/stemulator/controller 
+│   │   │   ├── edu/regis/stemulator/model
+│   │   │   ├── edu/regis/stemulator/repository
+│   │   │   ├── edu/regis/stemulator/request
+│   │   │   ├── edu/regis/stemulator/response
+│   │   │   └── edu/regis/stemulator/service
+│   │   │
+│   │   └── resources                           # Resource files
+│   │       ├── data                            # MongoDB data and schema
+│   │       └── application.properties          # main properties file for application
+│   │
+│   └── test/                                   # Unit & integration tests
+│
+├── .github/
+│   └── workflows 
+│       └── main.yml                            # Github Actions config
+│
+└── doc/
+    ├── API Specification.docx                  # API specs
+    ├── Architecture Decisions.docx             # Record of architecture decisions
+    ├── Architecture.docx                       # Application architecture
+    └── Detailed Design.docx                    # Application detailed designs
+```
+---
 
 
 
