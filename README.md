@@ -61,7 +61,7 @@ REST API for running interactive and AI guided simulations of STEM education sci
 
 ```
 stemulator-api/
-├── README.md                                   # Project overview, environment setup, build and run info
+├── README.md                                   # Project overview, environment setup, build & run info
 ├── HELP.md                                     # Links to helpful resources
 ├── mvnw.cmd                                    # Maven wrapper script for Windows platform
 ├── mvnw                                        # Maven wrapper Bash script
