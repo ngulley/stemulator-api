@@ -11,5 +11,6 @@ public class ScienceGuideRequest {
 	private List observations;
 	private List evidence;
 	private List predictions;
+	private List history;
 
 }
