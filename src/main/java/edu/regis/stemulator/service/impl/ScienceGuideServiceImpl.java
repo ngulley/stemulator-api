@@ -2,6 +2,8 @@ package edu.regis.stemulator.service.impl;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;
@@ -28,7 +30,7 @@ public class ScienceGuideServiceImpl implements ScienceGuideService {
     		Each lab contains 4 parts.
     		Each part contains a title, lab setup, observations the student should make (3), data the student should document as evidence to support scientific reasoning (1), and predictions the student should make (2).
     		The student is requesting guidance for part %s.
-    		Take the setup, observations, evidence and predictions that the user has submitted for this part of the lab and compare it to Science Lab JSON which describes the overall lesson plan for the lab. 
+    		Take the setup, observations, evidence, predictions and history that the user has submitted for this part of the lab and compare it to Science Lab JSON which describes the overall lesson plan for the lab. 
     		Use the result of this comparison as a basis for providing expert guidance to the student that furthers their learning.
     		Return structured data.
     		
@@ -40,6 +42,7 @@ public class ScienceGuideServiceImpl implements ScienceGuideService {
     		setup: %s
     		observations: %s
     		predictions: %s
+    		history: %s
     		evidence: see CSV FILE(S) section
     		    		
     		## SCIENCE LAB JSON ##
@@ -72,9 +75,24 @@ public class ScienceGuideServiceImpl implements ScienceGuideService {
 			MultipartFile evidence) {
     	
     	var studentName = request.getStudentName();
-    	var setup = request.getSetup();
+    	List<String> setup = request.getSetup();
     	var observations = request.getObservations();
     	var predictions = request.getPredictions();
+    	var history = request.getHistory();
+    	
+    	// Hack to adapt to naming discrepancy between the label name in UI and the underlying model for the field
+    	List<String> setup2 = new ArrayList<String>();
+    	for (String str : setup) {
+    		if (str == "predation=low") {
+    			setup2.add("wolves=few");
+    		} else if (str == "predation=medium") {
+    			setup2.add("wolves=some");
+    		} else if (str == "predation=high") {
+    			setup2.add("wolves=many");
+    		} else {
+    			setup2.add(str);
+    		}
+    	}
     	 		
         return labRepository.findById(labId).map(lab -> {
             var discipline = lab.getDiscipline();
@@ -106,9 +124,10 @@ public class ScienceGuideServiceImpl implements ScienceGuideService {
 	            labId,
 	            partId,
 	            labPartTitle,
-	            setup,
+	            setup2,
 	            observations,
 	            predictions,
+	            history,
 	            scienceLabJson,
 	            cvsFile);
           
