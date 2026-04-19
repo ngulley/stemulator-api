@@ -1,6 +1,5 @@
 package edu.regis.stemulator.service.impl;
 
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,10 +15,6 @@ import edu.regis.stemulator.repository.mongo.ScienceLabRepository;
 import edu.regis.stemulator.request.ScienceGuideRequest;
 import edu.regis.stemulator.response.ScienceGuideResponse;
 import edu.regis.stemulator.service.ScienceGuideService;
-
-import edu.regis.stemulator.repository.mongo.ScienceLabRepository;
-import edu.regis.stemulator.request.ScienceGuideRequest;
-import edu.regis.stemulator.response.ScienceGuideResponse;
 
 @Service
 public class ScienceGuideServiceImpl implements ScienceGuideService {
@@ -163,5 +158,5 @@ public class ScienceGuideServiceImpl implements ScienceGuideService {
 			MultipartFile screenshot) {
 		return null;
 	}
-
+	
 }
