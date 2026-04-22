@@ -1,0 +1,62 @@
+name: Build and Deploy API to EC2
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      EC2_HOST: ec2-3-145-201-181.us-east-2.compute.amazonaws.com
+      EC2_USER: ubuntu
+      REMOTE_JAR_PATH: /opt/stemulator-api/stemulator-api.jar
+      SERVICE_NAME: stemulator-api
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Build with Maven
+        run: mvn -B clean package -DskipTests
+
+      - name: Start ssh-agent and add private key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+
+      - name: Add EC2 host to known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -H "$EC2_HOST" >> ~/.ssh/known_hosts
+
+      - name: Find built JAR
+        id: find_jar
+        run: |
+          JAR_FILE=$(find target -maxdepth 1 -type f -name "*.jar" ! -name "*sources.jar" ! -name "*javadoc.jar" | head -n 1)
+          if [ -z "$JAR_FILE" ]; then
+            echo "No JAR found in target/"
+            exit 1
+          fi
+          echo "jar_file=$JAR_FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Copy JAR to EC2
+        run: |
+          scp "${{ steps.find_jar.outputs.jar_file }}" \
+              "${EC2_USER}@${EC2_HOST}:${REMOTE_JAR_PATH}"
+
+      - name: Restart application service
+        run: |
+          ssh "${EC2_USER}@${EC2_HOST}" << EOF
+            sudo systemctl restart ${SERVICE_NAME}
+            sudo systemctl status ${SERVICE_NAME} --no-pager
+          EOF
