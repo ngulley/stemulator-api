@@ -36,8 +36,11 @@ jobs:
 
       - name: Add EC2 host to known_hosts
         run: |
+          set -e
+          echo "Using host: $EC2_HOST"
           mkdir -p ~/.ssh
           ssh-keyscan -H "$EC2_HOST" >> ~/.ssh/known_hosts
+          cat ~/.ssh/known_hosts
 
       - name: Find built JAR
         id: find_jar
