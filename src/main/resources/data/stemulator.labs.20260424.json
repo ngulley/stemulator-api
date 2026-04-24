@@ -1,0 +1,243 @@
+[{
+  "_id": "HS-ESS1-2",
+  "discipline": "Earth and Space Science",
+  "topic": "Earth’s Place in the Universe",
+  "subTopic": "Earth and the Solar System",
+  "description": "Virtual science lab lesson plan for a single student using the My Solar System Lab Simulation app, designed as a case-study investigation aligned to NGSS HS-ESS1-2A. Students investigate how mass, distance, speed, and gravitational interaction shape orbital motion and Earth’s place in the solar system through four inquiry-based lab parts.",
+  "learningGoals": {
+    "bigIdea": "Gravity and motion work together to determine the paths of planets, helping explain Earth’s place in the solar system.",
+    "objectives": [
+      "Investigate how gravitational attraction between two bodies affects orbital motion in a Sun-planet system.",
+      "Analyze how changing distance influences orbital speed, orbit size, and orbital period.",
+      "Determine how initial speed changes can produce stable or unstable orbital paths.",
+      "Use simulation evidence to explain why Earth’s orbit is stable and how it compares with other possible planetary configurations."
+    ],
+    "successCriteria": [
+      "I can describe how gravity and motion interact to create an orbit.",
+      "I can use simulation data to explain how distance affects orbital speed and period.",
+      "I can predict and justify how changing speed alters the path of a planet.",
+      "I can support a claim about Earth’s orbit using data from the simulation."
+    ]
+  },
+  "labParts": [
+    {
+      "partId": 1,
+      "title": "Case Study 1: Why Does the Planet Keep Missing the Sun?",
+      "setup": [
+        "Open the simulation and select the Sun-Planet system from the body selector.",
+        "Set Body 1 to a large mass and Body 2 to a smaller mass using the mass sliders so the system resembles a star-planet pair.",
+        "Turn on Path and Center of Mass; keep Grid and Measuring Tape off for the first run.",
+        "Set speed to Normal and press Play.",
+        "Observe the orbit for at least one full cycle, then pause and reset if needed.",
+        "Use the zoom control only if the orbit extends beyond the screen."
+      ],
+      "observations": [
+        "What shape does the planet’s path take around the star, and how does that shape help explain why the planet does not crash into the Sun?",
+        "Where is the center of mass located relative to the two bodies, and what does that suggest about which object exerts the stronger gravitational influence?",
+        "How does the distance between the two bodies change during the orbit, and what does that imply about gravitational attraction over time?"
+      ],
+      "evidence": [
+        "Collect and save a CSV file with columns for time, body 1 mass, body 2 mass, distance between bodies, and center of mass position for at least one complete orbit."
+      ],
+      "predictions": [
+        "If the smaller body were moved farther from the larger body, what would you predict would happen to the orbit size and orbital period?",
+        "If the larger body’s mass were reduced, what would you predict would happen to the center of mass and the orbit shape?"
+      ]
+    },
+    {
+      "partId": 2,
+      "title": "Case Study 2: What Happens When Distance Changes?",
+      "setup": [
+        "Clear the simulation and keep the Sun-Planet system selected.",
+        "Set the masses to the same values used in Part 1 so mass is controlled.",
+        "Turn on Path, Measuring Tape, and Speed (km/s); leave Velocity and Gravity Force off for now.",
+        "Use the measuring tape to estimate the starting distance between the two bodies.",
+        "Run the simulation at Normal speed, then repeat with the planet placed at a larger starting distance from the Sun.",
+        "Record results for both trials."
+      ],
+      "observations": [
+        "How does the orbital path change when the starting distance from the Sun increases?",
+        "What happens to the planet’s speed when it is farther from the Sun compared with when it is closer?",
+        "How does the time required to complete one orbit change as distance increases?"
+      ],
+      "evidence": [
+        "Collect and save a CSV file with columns for trial, starting distance, orbital speed, and orbital period for at least two different distances."
+      ],
+      "predictions": [
+        "If the planet were placed even farther from the Sun, what would you predict about its speed and orbital period?",
+        "If the planet were placed closer to the Sun, what would you predict about the strength of gravity and the tightness of the orbit?"
+      ]
+    },
+    {
+      "partId": 3,
+      "title": "Case Study 3: Can Speed Make a Planet Escape?",
+      "setup": [
+        "Reset the simulation and keep the Sun-Planet system selected.",
+        "Use the same masses as in Part 1 and Part 2.",
+        "Turn on Path, Velocity, and Speed (km/s); optionally turn on Gravity Force for comparison.",
+        "Start with the planet at a moderate distance from the Sun.",
+        "Run three trials by changing the initial speed setting or adjusting the motion conditions available in the app, keeping mass and distance constant.",
+        "Compare a slower-than-orbital-speed trial, a near-stable-orbital-speed trial, and a faster-than-stable trial."
+      ],
+      "observations": [
+        "What happens to the path when the planet’s speed is too low compared with the stable orbital case?",
+        "What happens to the path when the planet’s speed is too high compared with the stable orbital case?",
+        "How do the velocity and gravity force indicators help explain whether the planet stays in orbit, spirals inward, or escapes?"
+      ],
+      "evidence": [
+        "Collect and save a CSV file with columns for trial, initial speed, path type, and outcome of the motion (stable orbit, inward spiral, or escape)."
+      ],
+      "predictions": [
+        "If the planet’s speed were increased slightly above the stable value, what would you predict about the orbit shape?",
+        "If the planet’s speed were decreased slightly below the stable value, what would you predict about the planet’s future path?"
+      ]
+    },
+    {
+      "partId": 4,
+      "title": "Case Study 4: Which Combination Best Explains Earth’s Orbit?",
+      "setup": [
+        "Reset the simulation and select the Sun-Planet system.",
+        "Set the Sun to a much larger mass than the planet, using the same general scale as earlier trials.",
+        "Turn on Path, Center of Mass, Speed (km/s), Velocity, and Gravity Force.",
+        "Use the zoom and measuring tape as needed to compare orbit size and distance.",
+        "Run the simulation with a configuration that best resembles Earth’s orbit, then compare it with one altered variable at a time: mass, distance, or speed.",
+        "Decide which combination produces the most stable, Earth-like orbit."
+      ],
+      "observations": [
+        "Which combination of mass, distance, and speed produces the most stable orbit, and why does it seem most Earth-like?",
+        "How does the center of mass behave in the Earth-like configuration compared with the altered configurations?",
+        "What evidence from the path, speed, and force indicators suggests that gravity and motion are balanced in the best model?"
+      ],
+      "evidence": [
+        "Collect and save a CSV file with columns for configuration, body 1 mass, body 2 mass, starting distance, speed, orbital stability, and orbit type for all tested setups."
+      ],
+      "predictions": [
+        "If Earth were much closer to the Sun, what would you predict about its orbital speed and climate implications?",
+        "If Earth were much farther from the Sun, what would you predict about its orbital period and the amount of solar energy received?"
+      ]
+    }
+  ],
+  "_class": "edu.regis.stemulator.model.ScienceLab"
+},
+{
+  "_id": "HS-LS4-2",
+  "discipline": "Life Science",
+  "topic": "Biological Evolution: Unity and Diversity",
+  "subTopic": "Natural Selection",
+  "description": "Virtual science lab lesson plan for a single student using the Natural Selection Lab Simulation app to investigate how environmental conditions, variation, and selection pressures change trait frequencies over generations through case-study-based scientific inquiry.",
+  "learningGoals": {
+    "bigIdea": "Natural selection changes populations over time because individuals with traits better suited to their environment are more likely to survive and reproduce.",
+    "objectives": [
+      "Identify how environmental conditions influence survival and reproduction in a simulated rabbit population.",
+      "Analyze how changes in habitat, predators, and food supply alter trait frequencies across generations.",
+      "Investigate how mutation creates variation that can be acted on by natural selection.",
+      "Construct an evidence-based explanation of natural selection using simulation data and observed patterns."
+    ],
+    "successCriteria": [
+      "I can describe how a specific environmental condition affects which rabbits survive.",
+      "I can compare trait data across generations and identify patterns of change.",
+      "I can explain how mutation contributes to variation in a population.",
+      "I can use CSV data from the simulation to support a claim about natural selection."
+    ]
+  },
+  "labParts": [
+    {
+      "partId": 1,
+      "title": "Case Study 1: Desert Survival and the First Clues of Natural Selection",
+      "setup": [
+        "Open the Natural Selection Lab Simulation app and select the Introduction to Natural Selection tab.",
+        "Set habitat to Desert.",
+        "Set wolves to Few.",
+        "Set food supply to Normal.",
+        "Set mutation rate to 10%.",
+        "Record the starting population counts and the visible rabbit trait patterns before advancing generations.",
+        "Run the simulation for 3 generations using the Next Generation control, pausing after each generation to inspect the population and trait graphs."
+      ],
+      "observations": [
+        "What rabbit traits seem most common at the start of the simulation, and how might those traits help or hinder survival in a desert habitat?",
+        "What changes do you notice in the population size and trait distribution after each generation?",
+        "Which rabbits appear more likely to survive in the desert, and what evidence from the simulation supports that idea?"
+      ],
+      "evidence": [
+        "Collect and save a CSV file named part1_desert_baseline.csv with columns for generation, population size, average speed, average camouflage, average size, habitat, wolves, food supply, and mutation rate."
+      ],
+      "predictions": [
+        "If the simulation continues for more generations in the desert, which trait do you predict will become more common, and why?",
+        "How do you predict the rabbit population will change if the environment stays the same but the generations continue?"
+      ]
+    },
+    {
+      "partId": 2,
+      "title": "Case Study 2: Environmental Change as a Selection Pressure",
+      "setup": [
+        "Keep the same simulation and switch the habitat from Desert to Forest.",
+        "Change wolves to Many.",
+        "Change food supply to Scarce.",
+        "Keep mutation rate at 10% for a controlled comparison.",
+        "Run the simulation for 3 additional generations, recording changes after each generation.",
+        "Compare the new results to the desert baseline and note which traits increase or decrease in frequency."
+      ],
+      "observations": [
+        "How does changing the habitat from desert to forest affect which rabbits are easier or harder to spot?",
+        "What happens to the population when predators increase and food becomes scarce?",
+        "Which trait changes seem linked to survival under the new environmental conditions?"
+      ],
+      "evidence": [
+        "Collect and save a CSV file named part2_environmental_change.csv with columns for generation, population size, average speed, average camouflage, average size, habitat, wolves, food supply, and mutation rate."
+      ],
+      "predictions": [
+        "If the forest conditions continue, which rabbit trait do you predict will be favored by natural selection?",
+        "What do you predict will happen to the population if wolves remain many and food remains scarce for several more generations?"
+      ]
+    },
+    {
+      "partId": 3,
+      "title": "Case Study 3: Mutation, Variation, and the Source of New Traits",
+      "setup": [
+        "Reset or continue with a fresh trial in the simulation to isolate the effect of mutation.",
+        "Set habitat to Arctic.",
+        "Set wolves to Some.",
+        "Set food supply to Normal.",
+        "Increase mutation rate to High variation if available, or move the slider to the highest setting shown.",
+        "Run the simulation for 3 generations and watch for new trait combinations or shifts in trait averages.",
+        "Compare the trait graph and population graph to earlier trials."
+      ],
+      "observations": [
+        "What new trait differences appear when mutation rate is increased?",
+        "How does higher variation affect the range of traits in the rabbit population?",
+        "Do any traits seem to give certain rabbits a better chance of surviving in the arctic habitat?"
+      ],
+      "evidence": [
+        "Collect and save a CSV file named part3_mutation_variation.csv with columns for generation, population size, average speed, average camouflage, average size, habitat, wolves, food supply, and mutation rate."
+      ],
+      "predictions": [
+        "If mutation remains high, which new trait variation do you predict may become more common over time?",
+        "How do you predict increased variation will affect the population's ability to adapt to changing conditions?"
+      ]
+    },
+    {
+      "partId": 4,
+      "title": "Case Study 4: Explaining Natural Selection with Evidence",
+      "setup": [
+        "Choose one habitat condition from the previous trials that produced the clearest trait shift.",
+        "Set wolves, food supply, and mutation rate to the same values used in that trial.",
+        "Run the simulation for 3 more generations to confirm the pattern.",
+        "Use the analysis graphs to compare population trends and trait averages across generations.",
+        "Prepare a short evidence-based explanation of how the environment influenced which rabbits survived and reproduced."
+      ],
+      "observations": [
+        "What consistent pattern do you see between the environment and the traits that become more common?",
+        "How does the population graph support or challenge your explanation of natural selection?",
+        "What evidence shows that some rabbits were more successful at surviving and reproducing than others?"
+      ],
+      "evidence": [
+        "Collect and save a CSV file named part4_claim_evidence_reasoning.csv with columns for generation, population size, average speed, average camouflage, average size, habitat, wolves, food supply, and mutation rate."
+      ],
+      "predictions": [
+        "Based on your evidence, what do you predict would happen if the same population were placed in a different habitat?",
+        "What do you predict would happen to trait frequencies if the selection pressure were removed?"
+      ]
+    }
+  ],
+  "_class": "edu.regis.stemulator.model.ScienceLab"
+}]
