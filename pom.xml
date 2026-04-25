@@ -166,17 +166,27 @@
 		      </executions>
 		    </plugin>
 		    <plugin>
-		      <groupId>org.owasp</groupId>
-		      <artifactId>dependency-check-maven</artifactId>
-		      <version>12.1.8</version>
-		      <executions>
-		        <execution>
-		          <goals>
-		            <goal>check</goal>
-		          </goals>
-		        </execution>
-		      </executions>
-		    </plugin>
+			  <groupId>org.owasp</groupId>
+			  <artifactId>dependency-check-maven</artifactId>
+			  <version>12.1.8</version>
+			  <configuration>
+			    <nvdApiKey>${nvdApiKey}</nvdApiKey>
+			    <nvdApiDelay>5000</nvdApiDelay>
+			    <nvdMaxRetryCount>5</nvdMaxRetryCount>
+			    <nvdValidForHours>24</nvdValidForHours>
+			    <formats>
+			      <format>HTML</format>
+			      <format>JSON</format>
+			    </formats>
+			  </configuration>
+			  <executions>
+			    <execution>
+			      <goals>
+			        <goal>check</goal>
+			      </goals>
+			    </execution>
+			  </executions>
+			</plugin>
 		</plugins>
 	</build>
 
