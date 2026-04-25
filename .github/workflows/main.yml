@@ -25,5 +25,13 @@ jobs:
           java-version: '21'
           cache: 'maven'
 
+      - name: Cache OWASP Dependency-Check data
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository/org/owasp/dependency-check-data
+          key: dependency-check-data-${{ runner.os }}
+          restore-keys: |
+            dependency-check-data-${{ runner.os }}	
+
       - name: Build and test with Maven
-        run: mvn -B clean verify
+        run: mvn -B clean verify -DnvdApiKey=${{ secrets.NVD_API_KEY }}
